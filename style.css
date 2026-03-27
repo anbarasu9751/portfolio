@@ -1,0 +1,241 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#0a2236;
+}
+
+nav h2{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00ffff;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 50px;
+    flex-wrap:wrap;
+    animation:fadeDown 1.5s ease;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.content h1{
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.content h2{
+    font-size:34px;
+    font-weight:600;
+    color:#00ffff;
+}
+
+.content h3{
+    font-size:24px;
+    font-weight:400;
+}
+
+.content p{
+    font-size:16px;
+    font-weight:300;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+/* Social Icons */
+.icons{
+    margin-top:20px;
+}
+
+.icons a{
+    color:#00ffff;
+    font-size:24px;
+    margin-right:15px;
+    transition:0.4s;
+}
+
+.icons a:hover{
+    color:white;
+    transform:scale(1.2);
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#00ffff;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px #00ffff;
+}
+
+/* Profile Image */
+.image img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    border:5px solid #00ffff;
+    object-fit:cover;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:0 0 10px #00ffff;
+    }
+    to{
+        box-shadow:0 0 35px #00ffff;
+    }
+}
+
+/* Sections */
+section{
+    padding:40px 50px;
+}
+
+h2{
+    font-size:34px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* Skills */
+.skill-box{
+    display:inline-block;
+    background:transparent;
+    color:#00ffff;
+    border:2px solid #00ffff;
+    padding:10px 18px;
+    margin:8px;
+    border-radius:25px;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:0.5px;
+    transition:0.4s;
+}
+
+.skill-box:hover{
+    background:#00ffff;
+    color:black;
+    box-shadow:0 0 15px #00ffff;
+}
+
+/* Project Cards */
+.card{
+    background:#1e293b;
+    color:white;
+    margin-top:20px;
+    border-radius:12px;
+    overflow:hidden;
+    width:300px;
+    display:inline-block;
+    margin-right:20px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00ffff;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3,
+.card p{
+    padding:10px;
+}
+
+/* Contact */
+#contact{
+    text-align:center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .image img{
+        margin-top:30px;
+        width:220px;
+        height:220px;
+    }
+
+    .card{
+        width:100%;
+        margin-bottom:20px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anbu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+<nav>
+    <h2>Portfolio </h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="content">
+        <h3>Hello, It's Me</h3>
+        <h1>Anbarasu</h1>
+        <h2>I am <span id="typing">Website Developer & UI UX Designer</span></h2>
+
+        <p>
+            I am a Computer Science Engineering student passionate about website development,
+            modern design, and creative web projects.
+        </p>
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/anbarasu-m-97a244292" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/anbarasu9751" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:anburock395@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <a href="#about" class="btn">More About Me</a>
+    </div>
+
+    <div class="image">
+        <img src="anbu.jpeg" alt="Profile Picture">
+    </div>
+
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I enjoy building responsive websites and learning modern frontend technologies.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Web Design</div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <img src="fruitshop.png" alt="Fruit Shop">
+        <h3>Fruit Shop Website</h3>
+        <p>Online fruit ordering website.</p>
+    </div>
+
+    <div class="card">
+        <img src="att.png" alt="Attendance">
+        <h3>Attendance System</h3>
+        <p>Student attendance management system.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📞 9751208559</p>
+    <p>✉️ anburock395@gmail.com</p>
+</section>
+
+
+<form action="contact.php" method="POST">
+<input type="text" name="name" placeholder="Your Name">
+<input type="email" name="email" placeholder="Your Email">
+<textarea name="message"></textarea>
+<button type="submit">Send</button>
+</form>
+
+
+
+</body>
+</html>
